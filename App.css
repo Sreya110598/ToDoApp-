@@ -1,0 +1,179 @@
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.task-form-container {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-list-container {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.status-badge.to-do {
+  background-color: #f44336; 
+}
+
+.status-badge.in-progress {
+  background-color: #ff9800; 
+}
+
+.status-badge.completed {
+  background-color: #4caf50; 
+}
+
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+  background-color: #e0f7e0;
+}
+
+.task-content {
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.task-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.task-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.action-btn:hover {
+  color: #4caf50;
+}
+
+.delete-btn:hover {
+  color: #f44336;
+}
+
+.edit-btn:hover {
+  color: #ff9800;
+}
+
+.mark-complete:hover {
+  color: #4caf50;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+
+.task-form input,
+.task-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.task-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width: 600px) {
+  .task-list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .task-form-container {
+    padding: 15px;
+  }
+}
